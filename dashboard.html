@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Paper Trading Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome, <span id="user"></span></h1>
+    <h2>Balance: ₹<span id="balance">100000</span></h2>
+
+    <div class="trade-section">
+      <select id="symbol">
+        <option value="NIFTY">NIFTY 50</option>
+        <option value="BANKNIFTY">BANK NIFTY</option>
+      </select>
+      <span>Live Price: ₹<span id="price">22000</span></span>
+      <input type="number" id="qty" placeholder="Quantity">
+      <button onclick="buy()">BUY</button>
+      <button onclick="sell()">SELL</button>
+    </div>
+
+    <canvas id="chart" width="700" height="300"></canvas>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Symbol</th>
+          <th>Price</th>
+          <th>Qty</th>
+          <th>P&L</th>
+        </tr>
+      </thead>
+      <tbody id="orders"></tbody>
+    </table>
+
+    <button onclick="logout()" class="logout">Logout</button>
+  </div>
+
+  <script src="charts.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
