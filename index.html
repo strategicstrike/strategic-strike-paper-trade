@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Strategic Strike Paper Trading</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Strategic Strike – Paper Trading</h1>
+    <p>Trade multiple instruments live with zero risk!</p>
+
+    <div class="login-box">
+      <input type="text" id="username" placeholder="Enter Username">
+      <button onclick="login()">Login</button>
+    </div>
+  </div>
+
+  <script>
+    function login() {
+      let user = document.getElementById("username").value;
+      if(!user) return alert("Enter username");
+      localStorage.setItem("username", user);
+      window.location.href = "dashboard.html";
+    }
+  </script>
+</body>
+</html>
