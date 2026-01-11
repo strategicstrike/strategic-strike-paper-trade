@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+input, select, button {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+}
+button {
+  background-color: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #334155;
+}
+.logout {
+  background-color: red;
+  margin-top: 20px;
+}
+.trade-section {
+  margin: 20px 0;
+}
+canvas {
+  background: #1e293b;
+  margin-top: 20px;
+  border-radius: 10px;
+}
